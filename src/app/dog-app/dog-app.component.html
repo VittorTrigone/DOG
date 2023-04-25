@@ -1,0 +1,11 @@
+<div class = "btn btn-primary" (click)="loadDog()">
+  Próximo
+</div>
+<div class = "mt-3">
+  <img [src] = "dog.message" width = "300px" class = "shadow-lg rounded">
+  <div class = "display-6">
+    <span *ngFor = "let name of getBread()">
+      {{name | titlecase}}
+    </span>
+  </div>
+</div>
